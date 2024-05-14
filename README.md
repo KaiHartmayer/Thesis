@@ -1,3 +1,4 @@
-# Thesis
+# Semantic Analysis of Lithium-Ion Battery Patents Using Text Mining and Machine Learning
 
-get-df-lemma needs cutting down (currently additionally used as back-up code)
+Welcome to the repository of my thesis.
+
