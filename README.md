@@ -22,4 +22,5 @@ get-accepted-sentences-qualitative-analysis.ipynb: extracts sentences in which w
 
 2017-2023_BorutaShap.ipynb: Boruta-SHAP for 2017-2023 time period.
 
+QualEval.ipynb: qualitative evaluation; interrater reliability calculations and analysis of answer frequencies.
 
