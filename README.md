@@ -24,6 +24,8 @@ get-accepted-sentences-qualitative-analysis.ipynb: extracts sentences in which w
 
 QualEval.ipynb: qualitative evaluation; interrater reliability calculations and analysis of answer frequencies.
 
+## 
+
 Qualitative_Part folder contains the answers to all 6 questions for the sampled patents, and all patents have been rated on the 3 sufficiently reliable questions by rater 1.
 
 
