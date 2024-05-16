@@ -12,7 +12,7 @@ time_period_analysis_(plots).ipynb: includes several plots of structured data ov
 
 demonstration_simplified.ipynb: code to reproduce the simplified example of the figure in the method section.
 
-Due to RAM limitations, the main code has been split up into several Jupyter Notebooks:
+#### Due to RAM limitations, the main code has been split up into several Jupyter Notebooks:
 
 get_tfidf_dummy.ipynb: makes word pair variables and applies the specified filters, saving results to a CSV file.
 
