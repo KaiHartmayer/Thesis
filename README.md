@@ -3,7 +3,7 @@
 Welcome to the repository of my thesis project.
 
 
-### Quick-Guide for the Repository:
+## Quick-Guide for the Repository:
 df_lemma_dropped.ipynb: data preprocessing; saves the working dataframe for the main part of the thesis as a CSV file.
 
 descriptives.ipynb: code to obtain the descriptive statistics reported in the results section of the thesis.
