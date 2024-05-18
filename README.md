@@ -28,6 +28,6 @@ Welcome to the repository of my thesis project.
 
 ## 
 
-*Qualitative_Part* folder contains the answers to all 6 questions for the sampled patents, and all patents have been rated on the 3 sufficiently reliable questions by rater 1.
+*Qualitative_Part* folder contains the answers to all 6 questions for the sampled patents, and all patents have been rated on the 3 sufficiently reliable questions by rater 1 (i.e., the main author).
 
 
