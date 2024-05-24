@@ -6,6 +6,8 @@ Welcome to the repository of my thesis project.
 ## Quick-Guide for the Repository:
 *df_lemma_dropped.ipynb*: data preprocessing; saves the working dataframe for the main part of the thesis as a CSV file.
 
+*df_lemma_dropped_part1.zip* and *df_lemma_dropped_part2.zip* combined represent the dataframe used for the case study.
+
 *descriptives.ipynb*: code to obtain the descriptive statistics reported in the results section of the thesis.
 
 *time_period_analysis_plots.ipynb*: includes several plots of structured data over time. Only the first plot is shown in the paper.
