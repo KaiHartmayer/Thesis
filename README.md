@@ -1,35 +1,59 @@
-# Semantic Analysis of Lithium-Ion Battery Patents Using Text Mining and Machine Learning
+# Structured Insights from Unstructured Text Data
+## Machine Learning-Based Patent Analysis to Determine the Position of New Technologies Within the Innovation Cycle
 
-Welcome to the repository of my thesis project.
+[![Python](https://img.shields.io/badge/Python-3.10.13-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
+---
 
-## Quick-Guide for the Repository:
-*df_lemma_dropped.ipynb*: data preprocessing; saves the working dataframe for the main part of the thesis as a CSV file.
+## Overview
 
-*df_lemma_dropped_part1.zip* and *df_lemma_dropped_part2.zip* combined represent the dataframe used for the case study.
+This repository contains all code and data necessary to replicate the analysis presented in our paper on using machine learning to analyze patent texts and determine technology positions within innovation cycles, with lithium-ion batteries as a case study.
 
-*descriptives.ipynb*: code to obtain the descriptive statistics reported in the results section of the thesis.
+---
 
-*time_period_analysis_plots.ipynb*: includes several plots of structured data over time. Only the first plot is shown in the paper.
+## Repository Structure
 
-*demonstration_simplified.ipynb*: code to reproduce the simplified example of the figure in the method section.
+### Core Analysis Files
 
-*max_tree_depth_check.ipynb*: check if results are robust over different maximum tree depths (i.e., 3 and 7).
+| File | Description |
+|------|-------------|
+| `df_lemma_dropped.ipynb` | **Data preprocessing pipeline** - Cleans and prepares patent text data, saves working dataframe as CSV |
+| `descriptives.ipynb` | **Descriptive statistics** - Generates all descriptive statistics reported in the Results section |
+| `time_period_analysis_plots.ipynb` | **Temporal visualizations** - Creates plots of structured data over time (first plot appears in paper) |
+| `demonstration_simplified.ipynb` | **Method demonstration** - Reproduces the simplified example figure from the Methods section |
+| `max_tree_depth_check.ipynb` | **Robustness check** - Tests result stability across different maximum tree depths (3, 5, and 7) |
 
-#### Due to RAM limitations, the main code has been split up into several Jupyter Notebooks:
+### Main Analysis Pipeline
+> **Note:** Due to RAM limitations, the main analysis has been split across multiple notebooks
 
-*get_tfidf_dummy.ipynb*: makes word pair variables and applies the specified filters, saving results to a CSV file.
+| File | Description |
+|------|-------------|
+| `get_tfidf_dummy.ipynb` | **Feature engineering** - Creates word pair variables, applies filters, exports to CSV |
+| `1920-2016_BorutaShap_HDBSCAN_UMAP_viz.ipynb` | **Feature selection & clustering (1920-2016)** - Runs Boruta-SHAP algorithm with UMAP-HDBSCAN visualization |
+| `2017-2023_BorutaShap.ipynb` | **Feature selection (2017-2023)** - Runs Boruta-SHAP for most recent time period |
+| `get-accepted-sentences-qualitative-analysis.ipynb` | **Qualitative extraction** - Extracts sentences containing important word pairs, exports to XLSX; plots average feature importances |
+| `QualEval.ipynb` | **Validation analysis** - Calculates inter-rater reliability (Cohen's κ) and analyzes response frequencies |
 
-*get-accepted-sentences-qualitative-analysis.ipynb*: extracts sentences in which word pair co-occurrences co-appear and saves them to XLSX files; also, the average feature importances are plotted.
+---
 
-*1920-2016_BorutaShap_HDBSCAN_UMAP_viz.ipynb*: Boruta-SHAP for 1920-2016 periods with UMAP-assisted HDBSCAN plots.
+## Data Files
 
-*2017-2023_BorutaShap.ipynb*: Boruta-SHAP for 2017-2023 time period.
+### Patent Dataset
+- **`df_lemma_dropped_part1.zip`** and **`df_lemma_dropped_part2.zip`** 
+  - Combined, these files contain the complete preprocessed patent dataset (n=57,052) used in the case study
+  - Extract both parts to reconstruct the full dataframe
 
-*QualEval.ipynb*: qualitative evaluation; interrater reliability calculations and analysis of answer frequencies.
+### Qualitative Evaluation
+- **`Qualitative_Part/`** folder
+  - Contains responses to all 6 evaluation questions for sampled patents
+  - All patents rated on the 3 sufficiently reliable questions by Rater 1 (primary author)
+  - Includes domain expert ratings for validation
 
-## 
+---
 
-*Qualitative_Part* folder contains the answers to all 6 questions for the sampled patents, and all patents have been rated on the 3 sufficiently reliable questions by rater 1 (i.e., the main author).
+## Getting Started
 
-
+### Prerequisites
+```bash
+Python 3.10.13
